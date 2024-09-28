@@ -129,6 +129,21 @@ Choose circuit type:
 OR(1, 0) = 1
 ```
 
+# Home Security System
+
+- **AND Gate**: Used to ensure multiple conditions are met before triggering an alarm. For example, both a door sensor and a motion detector must be activated to sound the alarm.
+- **OR Gate**: Used to trigger an alarm if any one of several sensors (e.g., smoke, motion, or window sensors) is activated.
+
+# Traffic Light Control
+
+- **AND Gate**: Used to control the green light only if both the pedestrian button is not pressed and no vehicle is detected on the cross street.
+- **OR Gate**: Used to change the light to red if either the pedestrian button is pressed or a vehicle is detected on the cross street.
+
+# Digital Circuit Design
+
+- **AND Gate**: Used in creating combinational circuits like multiplexers and decoders, which are essential in digital systems.
+
+
 ## Error Handling
 
 - The program checks for valid binary inputs (0 or 1) and will terminate with an error message if invalid input is detected.
