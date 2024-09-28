@@ -154,6 +154,6 @@ OR(1, 0) = 1
 #References:
 - https://www.geeksforgeeks.org/logic-gates/
 - https://www.security.org/home-security-systems/best/
-- https://www.w3schools.com/c/v
+- https://www.w3schools.com/c/
 - and none the less: https://openai.com/chatgpt/
 
