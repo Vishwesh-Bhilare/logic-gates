@@ -5,34 +5,36 @@ int main() {
     enum Level { LOW, HIGH };
     int user_ip;
     char IP1[5], IP2[5];
-    char circuit[10];  // Change to an array to hold the circuit name
+    char circuit[10];
 
-    // Accepting user input for logic gates
-    printf("Current state of Current A?\n0 - Low | 1 - High\n");
-    scanf("%d", &user_ip);
-
-    // Relating user input to enum
-    enum Level currentA;
-    if (user_ip == 0) {
-        currentA = LOW;
-        strcpy(IP1, "low");
-    } else {
-        currentA = HIGH;
-        strcpy(IP1, "high");
+    // Accepting user input for logic gates with validation
+    while (1) {
+        printf("Current state of Current A?\n0 - Low | 1 - High\n");
+        scanf("%d", &user_ip);
+        if (user_ip == 0) {
+            strcpy(IP1, "low");
+            break;
+        } else if (user_ip == 1) {
+            strcpy(IP1, "high");
+            break;
+        } else {
+            printf("Error: Please enter 0 or 1 only.\n");
+        }
     }
 
-    // Accepting user input for another logic gate
-    printf("Current state of Current B?\n0 - Low | 1 - High\n");
-    scanf("%d", &user_ip);
-
-    // Relating user input to enum
-    enum Level currentB;
-    if (user_ip == 0) {
-        currentB = LOW;
-        strcpy(IP2, "low");
-    } else {
-        currentB = HIGH;
-        strcpy(IP2, "high");
+    // Accepting user input for another logic gate with validation
+    while (1) {
+        printf("Current state of Current B?\n0 - Low | 1 - High\n");
+        scanf("%d", &user_ip);
+        if (user_ip == 0) {
+            strcpy(IP2, "low");
+            break;
+        } else if (user_ip == 1) {
+            strcpy(IP2, "high");
+            break;
+        } else {
+            printf("Error: Please enter 0 or 1 only.\n");
+        }
     }
 
     // Output the states
@@ -41,7 +43,7 @@ int main() {
 
     // DECIDING WHICH CIRCUIT TO INITIATE
     printf("Which circuit is to be tested: ");
-    scanf("%s", circuit);  // Use the correct array for input
+    scanf("%s", circuit);
 
     // CIRCUITS
     if (strcmp(circuit, "and") == 0 || strcmp(circuit, "AND") == 0 || strcmp(circuit, "And") == 0) { // AND gate
