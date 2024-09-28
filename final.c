@@ -66,9 +66,9 @@ int main() {
         printf("▁ ▂ ▄ ▅ ▆ ▇ █   🎀  INITIATING NOR GATE  🎀   █ ▇ ▆ ▅ ▄ ▂ ▁\n");
 
         if (strcmp(IP1, "high") == 0 && strcmp(IP2, "high") == 0) {
-            printf("NOR circuit will be NON-ACTIVE.\n");
-        } else if (strcmp(IP1, "high") == 0 || strcmp(IP2, "high") == 0) {
             printf("NOR circuit will be ACTIVE.\n");
+        } else if (strcmp(IP1, "high") == 0 || strcmp(IP2, "high") == 0) {
+            printf("NOR circuit will be NON-ACTIVE.\n");
         } else {
             printf("NOR circuit will be NON-ACTIVE.\n");
         }
